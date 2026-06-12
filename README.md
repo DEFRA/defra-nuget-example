@@ -5,12 +5,12 @@ An example .NET 10 package that returns friendly greetings.
 ## Install
 
 ```bash
-dotnet add package Defra.Example.Greetings
+dotnet add package DefraDigital.Example.Greetings
 
 ## Usage
 
 ```csharp
-using Defra.Example.Greetings;
+using DefraDigital.Example.Greetings;
 
 Console.WriteLine(Greeting.Hello("John"));
 // Hello, John!

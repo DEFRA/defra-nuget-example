@@ -34,7 +34,7 @@ jobs:
         run: dotnet test --configuration Release --no-build
 
       - name: Pack
-        run: dotnet pack Defra.Example.Greetings/Defra.Example.Greetings.csproj --configuration Release --no-build --output artifacts
+        run: dotnet pack DefraDigital.Example.Greetings/DefraDigital.Example.Greetings.csproj --configuration Release --no-build --output artifacts
 
       - name: NuGet login
         id: login

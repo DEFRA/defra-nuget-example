@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Defra.Example.Greetings\Defra.Example.Greetings.csproj" />
+    <ProjectReference Include="..\DefraDigital.Example.Greetings\DefraDigital.Example.Greetings.csproj" />
   </ItemGroup>
 
 </Project>

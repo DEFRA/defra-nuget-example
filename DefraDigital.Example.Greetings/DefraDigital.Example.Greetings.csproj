@@ -5,8 +5,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
 
-    <PackageId>Defra.Example.Greetings</PackageId>
-    <Version>0.3.0</Version>
+    <PackageId>DefraDigital.Example.Greetings</PackageId>
+    <Version>0.1.0</Version>
     <Authors>John Watson</Authors>
     <Company>Defra</Company>
     <Description>An example .NET 10 package that returns friendly greetings.</Description>

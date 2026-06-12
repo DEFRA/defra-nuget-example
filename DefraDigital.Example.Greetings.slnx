@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="DefraDigital.Example.Greetings.Tests/DefraDigital.Example.Greetings.Tests.csproj" />
+  <Project Path="DefraDigital.Example.Greetings/DefraDigital.Example.Greetings.csproj" />
+</Solution>

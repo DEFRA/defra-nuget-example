@@ -27,13 +27,13 @@ jobs:
       - name: Get current version
         id: current-version
         run: |
-          echo "version=$(grep -oP '(?<=<Version>)[^<]+' Defra.Example.Greetings/Defra.Example.Greetings.csproj)" >> $GITHUB_OUTPUT
+          echo "version=$(grep -oP '(?<=<Version>)[^<]+' DefraDigital.Example.Greetings/DefraDigital.Example.Greetings.csproj)" >> $GITHUB_OUTPUT
 
       - name: Get main branch version
         id: base-version
         run: |
           git fetch origin main --depth=1
-          echo "version=$(git show origin/main:Defra.Example.Greetings/Defra.Example.Greetings.csproj | grep -oP '(?<=<Version>)[^<]+')" >> $GITHUB_OUTPUT
+          echo "version=$(git show origin/main:DefraDigital.Example.Greetings/DefraDigital.Example.Greetings.csproj | grep -oP '(?<=<Version>)[^<]+')" >> $GITHUB_OUTPUT
 
       - name: Check version incremented
         run: |

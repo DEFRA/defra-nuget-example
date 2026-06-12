@@ -1,4 +1,4 @@
-﻿namespace Defra.Example.Greetings;
+﻿namespace DefraDigital.Example.Greetings;
 
 /// <summary>
 /// Provides simple greeting helpers.
