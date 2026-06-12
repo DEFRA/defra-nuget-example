@@ -14,7 +14,7 @@
     <PackageProjectUrl>https://github.com/DEFRA/defra-nuget-example</PackageProjectUrl>
     <RepositoryUrl>https://github.com/DEFRA/defra-nuget-example</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageLicenseFile>LICENCE</PackageLicenseFile>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
