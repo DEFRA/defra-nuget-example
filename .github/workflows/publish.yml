@@ -51,7 +51,6 @@ jobs:
           echo "version=$(grep -oP '(?<=<Version>)[^<]+' DefraDigital.Example.Greetings/DefraDigital.Example.Greetings.csproj)" >> $GITHUB_OUTPUT
 
       - name: Create GitHub Release
-        if: steps.check-version.outputs.exists == 'false'
         uses: softprops/action-gh-release@3bb12739c298aeb8a4eeaf626c5b8d85266b0e65 # v2
         with:
           tag_name: v${{ steps.current-version.outputs.version }}
