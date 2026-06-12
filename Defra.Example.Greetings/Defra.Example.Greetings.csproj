@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <PackageId>Defra.Example.Greetings</PackageId>
+    <Version>0.1.0</Version>
+    <Authors>John Watson</Authors>
+    <Company>Defra</Company>
+    <Description>An example .NET 10 package that returns friendly greetings.</Description>
+    <PackageTags>greetings;example;dotnet10</PackageTags>
+    <PackageProjectUrl>https://github.com/DEFRA/defra-nuget-example</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/DEFRA/defra-nuget-example</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>OGL-UK-3.0</PackageLicenseExpression>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="../README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+</Project>
