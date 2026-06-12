@@ -46,7 +46,7 @@ To request access:
 1. Create or sign in to your NuGet.org account.
 2. Make sure your NuGet.org account uses a secure Microsoft account with MFA enabled.
 3. Find your NuGet.org username.
-4. Contact `#github-support` in Slack.
+4. Contact `#nuget-support` in Slack.
 5. Include:
 
    - your NuGet.org username
