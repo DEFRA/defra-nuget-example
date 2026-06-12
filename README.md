@@ -1,4 +1,4 @@
-# defra-nuget-example
+# Defra NuGet Example
 
 An example .NET 10 package that returns friendly greetings.
 
