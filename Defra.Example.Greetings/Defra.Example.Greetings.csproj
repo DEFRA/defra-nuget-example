@@ -5,7 +5,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
 
-    <PackageId>DefraDigital.Example.Greetings</PackageId>
+    <PackageId>Defra.Example.Greetings</PackageId>
     <Version>0.1.5</Version>
     <Authors>John Watson</Authors>
     <Company>Defra</Company>

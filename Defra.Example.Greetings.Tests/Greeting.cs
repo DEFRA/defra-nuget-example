@@ -1,6 +1,6 @@
-﻿using DefraDigital.Example.Greetings;
+﻿using Defra.Example.Greetings;
 
-namespace DefraDigital.Example.Greetings.Tests;
+namespace Defra.Example.Greetings.Tests;
 
 public class GreetingTests
 {

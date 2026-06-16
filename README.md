@@ -5,13 +5,13 @@ An example .NET 10 package that returns friendly greetings.
 ## Install
 
 ```bash
-dotnet add package DefraDigital.Example.Greetings
+dotnet add package Defra.Example.Greetings
 ```
 
 ## Usage
 
 ```csharp
-using DefraDigital.Example.Greetings;
+using Defra.Example.Greetings;
 
 Console.WriteLine(Greeting.Hello("John"));
 // Hello, John!
@@ -64,7 +64,7 @@ Hi, please can I be added as a Collaborator to the Defra NuGet.org organisation?
 NuGet username: <your-nuget-username>
 Team: <team-name>
 GitHub repository: <github-org>/<repo-name>
-Proposed package ID: DefraDigital.<PackageName>
+Proposed package ID: Defra.<PackageName>
 Reason: We want to publish a public NuGet package using GitHub Actions Trusted Publishing.
 ```
 
@@ -85,34 +85,14 @@ When someone requests access via `#github-support`, a Defra NuGet organisation a
 
 ## Package ID naming
 
-The `Defra` package ID prefix is reserved on NuGet.org.
+The `Defra` package ID prefix is reserved on NuGet.org for the `Defra` organisation.
 
-This means package IDs such as the following may be rejected:
-
-```text
-Defra.Example.Greetings
-Defra.SomePackage
-Defra.Team.Component
-```
-
-For most new packages, use the `DefraDigital` prefix instead:
+Publish packages using a combination of `Defra` and a team or product name that is unlikely to conflict with other packages.
 
 ```text
-DefraDigital.Example.Greetings
-DefraDigital.SomePackage
-DefraDigital.Team.Component
-```
-
-Use a different prefix if it better reflects the ownership or context of the package.
-
-Examples:
-
-```text
-DefraDigital.Payments.Client
-DefraDigital.Forms
-DefraDigital.Messaging
-EnvironmentAgency.SomePackage
-Rpa.SomePackage
+Defra.Farming.Greetings
+Defra.Farming.Grants.Utilities
+Defra.Trade.Greetings
 ```
 
 Before publishing, check that the package ID is:
@@ -152,15 +132,15 @@ repo-root/
 │  └─ workflows/
 │     ├─ check-pull-request.yml
 │     └─ publish.yml
-├─ DefraDigital.Example.Greetings/
+├─ Defra.Example.Greetings/
 │  ├─ Greetings.cs
-│  └─ DefraDigital.Example.Greetings.csproj
-├─ DefraDigital.Example.Greetings.
+│  └─ Defra.Example.Greetings.csproj
+├─ Defra.Example.Greetings.
 │  ├─ Greeting.cs
-│  └─ DefraDigital.Example.Greetings.Tests.csproj
+│  └─ Defra.Example.Greetings.Tests.csproj
 ├─ README.md
 ├─ LICENCE
-└─ DefraDigital.Example.Greetings.slnx
+└─ Defra.Example.Greetings.slnx
 ```
 
 ## Creating a new package
@@ -170,36 +150,36 @@ Create a new repository for your package.
 Then create a solution, class library and test project:
 
 ```bash
-mkdir DefraDigital.Example.Greetings
-cd DefraDigital.Example.Greetings
+mkdir Defra.Example.Greetings
+cd Defra.Example.Greetings
 
-dotnet new sln --name DefraDigital.Example.Greetings
+dotnet new sln --name Defra.Example.Greetings
 
 dotnet new classlib \
-  --name DefraDigital.Example.Greetings \
-  --output DefraDigital.Example.Greetings
+  --name Defra.Example.Greetings \
+  --output Defra.Example.Greetings
 
 dotnet new xunit \
-  --name DefraDigital.Example.Greetings.Tests \
-  --output DefraDigital.Example.Greetings.Tests
+  --name Defra.Example.Greetings.Tests \
+  --output Defra.Example.Greetings.Tests
 
-dotnet sln add DefraDigital.Example.Greetings/DefraDigital.Example.Greetings.csproj
-dotnet sln add DefraDigital.Example.Greetings.DefraDigital.Example.Greetings.Tests.csproj
+dotnet sln add Defra.Example.Greetings/Defra.Example.Greetings.csproj
+dotnet sln add Defra.Example.Greetings.Defra.Example.Greetings.Tests.csproj
 
-dotnet add DefraDigital.Example.Greetings.DefraDigital.Example.Greetings.Tests.csproj \
-  reference DefraDigital.Example.Greetings/DefraDigital.Example.Greetings.csproj
+dotnet add Defra.Example.Greetings.Defra.Example.Greetings.Tests.csproj \
+  reference Defra.Example.Greetings/Defra.Example.Greetings.csproj
 ```
 
-Replace `DefraDigital.Example.Greetings` with your actual package ID.
+Replace `Defra.Example.Greetings` with your actual package ID.
 
 ## Adding package metadata
 
-Add NuGet package metadata to your project file. See [DefraDigital.Example.Greetings.csproj](DefraDigital.Example.Greetings/DefraDigital.Example.Greetings.csproj) for a full example.
+Add NuGet package metadata to your project file. See [Defra.Example.Greetings.csproj](Defra.Example.Greetings/Defra.Example.Greetings.csproj) for a full example.
 
 The key metadata properties to set are:
 
 ```xml
-<PackageId>DefraDigital.Example.Greetings</PackageId>
+<PackageId>Defra.Example.Greetings</PackageId>
 <Version>0.1.0</Version>
 <Authors>Authors</Authors>
 <Company>Defra</Company>
@@ -237,7 +217,7 @@ dotnet restore
 dotnet build --configuration Release
 dotnet test --configuration Release --no-build
 
-dotnet pack DefraDigital.Example.Greetings/DefraDigital.Example.Greetings.csproj \
+dotnet pack Defra.Example.Greetings/Defra.Example.Greetings.csproj \
   --configuration Release \
   --output artifacts
 ```
@@ -245,14 +225,14 @@ dotnet pack DefraDigital.Example.Greetings/DefraDigital.Example.Greetings.csproj
 The package file will be created in the `artifacts` directory:
 
 ```text
-artifacts/DefraDigital.Example.Greetings.0.1.0.nupkg
+artifacts/Defra.Example.Greetings.0.1.0.nupkg
 ```
 
 You can test the package locally from another project (run this command from the consuming project directory, adjusting the source path to where your artifacts folder is):
 
 ```bash
-dotnet add package DefraDigital.Example.Greetings \
-  --source /path/to/DefraDigital.Example.Greetings/artifacts
+dotnet add package Defra.Example.Greetings \
+  --source /path/to/Defra.Example.Greetings/artifacts
 ```
 
 ## GitHub Actions CI workflow
@@ -322,10 +302,10 @@ The pack step uses the `<Version>` from the `.csproj` directly:
 
 ```yaml
 - name: Pack
-  run: dotnet pack DefraDigital.Example.Greetings/DefraDigital.Example.Greetings.csproj --configuration Release --no-build --output artifacts
+  run: dotnet pack Defra.Example.Greetings/Defra.Example.Greetings.csproj --configuration Release --no-build --output artifacts
 ```
 
-Replace `DefraDigital.Example.Greetings` with your package ID and project path.
+Replace `Defra.Example.Greetings` with your package ID and project path.
 
 ## GitHub repository secret
 
@@ -479,10 +459,10 @@ Defra.Example.Greetings
 
 may fail because the `Defra` prefix is reserved.
 
-Use `DefraDigital` or another appropriate package prefix instead:
+Use `Defra` or another appropriate package prefix instead:
 
 ```text
-DefraDigital.Example.Greetings
+Defra.Example.Greetings
 ```
 
 ### `License expression must only contain licences that are approved`
@@ -520,7 +500,7 @@ https://www.nuget.org/packages/<PackageId>
 For example:
 
 ```text
-https://www.nuget.org/packages/DefraDigital.Example.Greetings
+https://www.nuget.org/packages/Defra.Example.Greetings
 ```
 
 ## Licence
