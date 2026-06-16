@@ -449,7 +449,7 @@ Defra
 
 ### `The package ID is reserved`
 
-The package ID probably uses a reserved prefix.
+The package ID probably uses a name already in use or that is reserved.
 
 For example:
 
@@ -457,13 +457,9 @@ For example:
 Defra.Example.Greetings
 ```
 
-may fail because the `Defra` prefix is reserved.
+may fail because the `Defra.Example.Greetings` package already exists.
 
-Use `Defra` or another appropriate package prefix instead:
-
-```text
-Defra.Example.Greetings
-```
+Use another appropriate package name instead.
 
 ### `License expression must only contain licences that are approved`
 
